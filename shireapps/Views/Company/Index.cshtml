@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        html {
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.3.1023/styles/kendo.bootstrap-v4.min.css" />
+    <script src="https://kendo.cdn.telerik.com/2019.3.1023/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2019.3.1023/js/kendo.all.min.js"></script>
+    @*<link href="~/Content/kendo/2019.3.1023/kendo.common.min.css" rel="stylesheet" />
+        <link href="~/Content/kendo/2019.3.1023/kendo.default.min.css" rel="stylesheet" />
+        <link href="~/Content/kendo/2019.3.1023/kendo.default.mobile.min.css" rel="stylesheet" />
+        <script src="~/Scripts/kendo/2019.3.1023/kendo.all.min.js"></script>*@
+    <link href="~/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="center">
+        <div class="container">
+            <form class="form-group">
+                <ul class="fieldlist">
+                    <li>
+                        <label for="simple-input">Company</label>
+                        <input id="simple-input" type="text" class="k-textbox" />
+                    </li>
+                    <li>
+                        <label for="simple-input">UnitNo</label>
+                        <input id="simple-input" type="text" class="k-textbox " />
+                    </li>
+                    <li>
+                        <label for="simple-textarea">Remarks</label>
+                        <textarea id="simple-textarea" class="k-textbox" "></textarea>
+                    </li>
+
+                    <li>
+                        <label for="simple-textarea">Date</label>
+                        <input id="simple-input" type="datetime" class="k-textbox" />
+                    </li>
+                    <li>
+                        <button class="k-button k-primary">Submit</button>
+                    </li>
+
+                </ul>
+            </form>
+        </div>
+       
+        <style>
+            .fieldlist {
+                margin: 0 0 -2em;
+                padding: 0;
+            }
+
+                .fieldlist li {
+                    list-style: none;
+                    padding-bottom: 2em;
+                }
+
+                .fieldlist label {
+                    display: block;
+                    padding-bottom: 1em;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    font-size: 12px;
+                    color: #444;
+                }
+        </style>
+    </div>
+</body>
+</html>
