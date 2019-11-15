@@ -25,25 +25,34 @@
 </head>
 <body>
     <div class="center">
-        <div class="container">
+       
+        <div>
+            <div class="center"><h1>Equipment/Vehicle Pre-Checklist</h1></div>
             <form class="form-group">
                 <ul class="fieldlist">
                     <li>
-                        <label for="simple-input">Company</label>
+                        <label >Company</label>
                         <input id="simple-input" type="text" class="k-textbox" />
                     </li>
                     <li>
-                        <label for="simple-input">UnitNo</label>
+                        <label >UnitNo</label>
                         <input id="simple-input" type="text" class="k-textbox " />
                     </li>
                     <li>
-                        <label for="simple-textarea">Remarks</label>
-                        <textarea id="simple-textarea" class="k-textbox" "></textarea>
+                        <label >Milages</label>
+                        <input id="simple-input" type="text" class="k-textbox " />
                     </li>
-
                     <li>
-                        <label for="simple-textarea">Date</label>
-                        <input id="simple-input" type="datetime" class="k-textbox" />
+                        <label for="country">Fluid Levels:</label>
+                        <select id="country" name="country">
+                            <option value="australia">Motor Oil</option>
+                            <option value="canada">Radiator</option>
+                            <option value="usa">Power Steering</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label >UnitNo</label>
+                        <input id="simple-input" type="text"  class="k-textbox " />
                     </li>
                     <li>
                         <button class="k-button k-primary">Submit</button>
@@ -52,8 +61,8 @@
                 </ul>
             </form>
         </div>
-       
-        <style>
+
+        @*<style>
             .fieldlist {
                 margin: 0 0 -2em;
                 padding: 0;
@@ -72,6 +81,38 @@
                     font-size: 12px;
                     color: #444;
                 }
+        </style>*@
+        <style>
+            input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+                input[type=submit]:hover {
+                    background-color: #45a049;
+                }
+
+            div {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
         </style>
     </div>
 </body>
