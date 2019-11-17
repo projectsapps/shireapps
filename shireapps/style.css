@@ -1,11 +1,33 @@
-﻿body {
+﻿
+.containers {
+    margin: auto;
+    width: 70%;
+    border: 3px solid thin;
+    padding: 2px;
+    background-color:wheat;
 }
-
 .center {
     margin: auto;
     width: 60%;
     border: 3px solid thin;
     padding: 10px;
+    text-align:center;
+    }
+.container2 {
+    margin: auto;
+    width: 60%;
+    border: 3px solid thin;
+    padding: 10px;
+    background-color:white;
+   
+    }
+span.a {
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+}
+.div-display {
+    display:inline-flex;
 }
 
 body, html {
@@ -13,18 +35,19 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    display: table;
+    display:table;
+    /*vertical-align:central;*/
 }
 
 body {
     display: table-cell;
-    vertical-align: middle;
-   
-}
+    vertical-align:top;
+  }
 
 form {
     display: table; /* shrinks to fit content */
     margin: auto;
+    
 }
 
 #example {
@@ -61,5 +84,85 @@ form {
 @media screen and (max-width: 1023px) {
     div.k-window {
         display: none !important;
+    }
+}
+
+/*Input TExt*/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    flex-direction:column;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/*Form-Inline */
+
+/* Style the form - display items horizontally */
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+    /* Add some margins for each label */
+    .form-inline label {
+        margin: 5px 10px 5px 0;
+    }
+
+    /* Style the input fields */
+    .form-inline input {
+        vertical-align: middle;
+        margin: 5px 10px 5px 0;
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+    }
+
+    /* Style the submit button */
+    .form-inline button {
+        padding: 10px 20px;
+        background-color: dodgerblue;
+        border: 1px solid #ddd;
+        color: white;
+    }
+
+        .form-inline button:hover {
+            background-color: royalblue;
+        }
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+    .form-inline input {
+        margin: 10px 0;
+    }
+
+    .form-inline {
+        flex-direction: column;
+        align-items: stretch;
     }
 }

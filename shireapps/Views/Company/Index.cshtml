@@ -3,117 +3,117 @@
     ViewBag.Title = "Index";
     Layout = null;
 }
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
-    <style>
-        html {
-            font-size: 14px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
-    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2019.3.1023/styles/kendo.bootstrap-v4.min.css" />
-    <script src="https://kendo.cdn.telerik.com/2019.3.1023/js/jquery.min.js"></script>
-    <script src="https://kendo.cdn.telerik.com/2019.3.1023/js/kendo.all.min.js"></script>
-    @*<link href="~/Content/kendo/2019.3.1023/kendo.common.min.css" rel="stylesheet" />
-        <link href="~/Content/kendo/2019.3.1023/kendo.default.min.css" rel="stylesheet" />
-        <link href="~/Content/kendo/2019.3.1023/kendo.default.mobile.min.css" rel="stylesheet" />
-        <script src="~/Scripts/kendo/2019.3.1023/kendo.all.min.js"></script>*@
-    <link href="~/style.css" rel="stylesheet" />
+    <title>Kendo UI &hearts; Coolgardie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link href="~/vendor/bootstrap.min.css" rel="stylesheet" />
+
+
+    <link href="~/css/kendo.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/kendo.common-bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/kendo.dataviz.bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/kendo.dataviz.default.min.css" rel="stylesheet" />
+    <link href="~/Styles.css" rel="stylesheet" />
+
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    
+    <script src="~/vendor/html5shiv.js"></script>
+    <script src="~/vendor/respond.min.js"></script>
+    <script src="~/js/kendo.all.min.js"></script>
+    <script src="~/js/kendo.timezones.min.js"></script>
+    <script src="~/js/theme-chooser.js"></script>
+
+
 </head>
 <body>
-    <div class="center">
-       
-        <div>
-            <div class="center"><h1>Equipment/Vehicle Pre-Checklist</h1></div>
-            <form class="form-group">
-                <ul class="fieldlist">
-                    <li>
-                        <label >Company</label>
-                        <input id="simple-input" type="text" class="k-textbox" />
-                    </li>
-                    <li>
-                        <label >UnitNo</label>
-                        <input id="simple-input" type="text" class="k-textbox " />
-                    </li>
-                    <li>
-                        <label >Milages</label>
-                        <input id="simple-input" type="text" class="k-textbox " />
-                    </li>
-                    <li>
-                        <label for="country">Fluid Levels:</label>
-                        <select id="country" name="country">
-                            <option value="australia">Motor Oil</option>
-                            <option value="canada">Radiator</option>
-                            <option value="usa">Power Steering</option>
+    <header>
+    </header>
+
+    <div id="example" class="container">
+        @*<ul id="menu">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#schedule">About</a></li>
+            <li><a href="#orders">Orders</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>*@
+        <section class="well">
+            <h2 class="ra-well-title">Equipment/Vehicle Pre-Start Checklist</h2>
+
+            <div class="form-horizontal form-widgets col-sm-6">
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="Company">Company</label>
+                    <div class="col-sm-8 col-md-6">
+                        <input id="Company" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="Date">Date</label>
+                    <div class="col-sm-8 col-md-6">
+                        <input type="date" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="FluidLevels">Fluid Levels</label>
+                    <div class="col-sm-8 col-md-6">
+                        <select id="gender">
+                            <option selected>Motor Oil</option>
+                            <option>Radiator</option>
+                            <option>Power Steering</option>
+                            <option>Windshield Washer</option>
                         </select>
-                    </li>
-                    <li>
-                        <label >UnitNo</label>
-                        <input id="simple-input" type="text"  class="k-textbox " />
-                    </li>
-                    <li>
-                        <button class="k-button k-primary">Submit</button>
-                    </li>
+                    </div>
+                </div>
 
-                </ul>
-            </form>
-        </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="language">Driver's Compartment</label>
+                    <div class="col-sm-8 col-md-6">
+                        <select id="language">
+                            <option selected>Sun Visors</option>
+                            <option>Side Windows</option>
+                            <option>Pedal Pads</option>
+                            <option>Seats & Seatbelts</option>
+                            <option>Speedometer</option>
+                            <option>Compressor Buildups</option>
+                            <option>Air Leakage</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
 
-        @*<style>
-            .fieldlist {
-                margin: 0 0 -2em;
-                padding: 0;
-            }
+            <div class="form-horizontal form-widgets col-sm-6">
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="name"> Machine Make/Model:</label>
+                    <div class="col-sm-8 col-md-6">
+                        <input id="Model" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-sm-4" for="name">Unit #: </label>
+                    <div class="col-sm-8 col-md-6">
+                        <input id="unitno" />
+                    </div>
+                </div>
+            </div>
 
-                .fieldlist li {
-                    list-style: none;
-                    padding-bottom: 2em;
-                }
+            <div class="clearfix"></div>
 
-                .fieldlist label {
-                    display: block;
-                    padding-bottom: 1em;
-                    font-weight: bold;
-                    text-transform: uppercase;
-                    font-size: 12px;
-                    color: #444;
-                }
-        </style>*@
-        <style>
-            input[type=text], select {
-                width: 100%;
-                padding: 12px 20px;
-                margin: 8px 0;
-                display: inline-block;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-                box-sizing: border-box;
-            }
+            <div class="buttons-wrap">
+                <button class="k-button k-state-default">Cancel</button>
+                <button class="k-button k-state-default">Submit</button>
+            </div>
+        </section>
 
-            input[type=submit] {
-                width: 100%;
-                background-color: #4CAF50;
-                color: white;
-                padding: 14px 20px;
-                margin: 8px 0;
-                border: none;
-                border-radius: 4px;
-                cursor: pointer;
-            }
 
-                input[type=submit]:hover {
-                    background-color: #45a049;
-                }
-
-            div {
-                border-radius: 5px;
-                background-color: #f2f2f2;
-                padding: 20px;
-            }
-        </style>
+        <footer>Copyright &copy;
+       <a href="https://www.telerik.com/">Telerik Inc</a>. All rights reserved.</footer>
     </div>
+    <script src="~/js/ajax.js"></script>
+    
 </body>
 </html>
