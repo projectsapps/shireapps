@@ -29,91 +29,134 @@
 
 </head>
 <body>
-    <header>
-    </header>
-
+    <header></header>
+   
     <div id="example" class="container">
-        @*<ul id="menu">
-            <li><a href="#profile">Home</a></li>
-            <li><a href="#schedule">About</a></li>
-            <li><a href="#orders">Orders</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#faq">FAQ</a></li>
-        </ul>*@
-        <section class="well">
-            <h2 class="ra-well-title">Equipment/Vehicle Pre-Start Checklist</h2>
+        <form>
+            <section class="well">
+                <h2 class="ra-well-title">Equipment/Vehicle Pre-Start Checklist</h2>
 
-            <div class="form-horizontal form-widgets col-sm-6">
-                <div class="form-group">
-                    <label class="control-label col-sm-4" for="Company">Company</label>
-                    <div class="col-sm-8 col-md-6">
-                        <input id="Company" />
+                <div class="form-horizontal form-widgets col-sm-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="Company">Company</label>
+                        <div class="col-sm-8 col-md-6">
+                            <input id="Company" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="Date">Date</label>
+                        <div class="col-sm-8 col-md-6">
+                            <input type="date" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="FluidLevels">Fluid Levels</label>
+                        <div class="col-sm-8 col-md-6">
+                            <select id="gender">
+                                <option selected>Motor Oil</option>
+                                <option>Radiator</option>
+                                <option>Power Steering</option>
+                                <option>Windshield Washer</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="language">Driver's Compartment</label>
+                        <div class="col-sm-8 col-md-6">
+                            <select id="language">
+                                <option selected>Sun Visors</option>
+                                <option>Side Windows</option>
+                                <option>Pedal Pads</option>
+                                <option>Seats & Seatbelts</option>
+                                <option>Speedometer</option>
+                                <option>Compressor Buildups</option>
+                                <option>Air Leakage</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
 
-                <div class="form-group">
-                    <label class="control-label col-sm-4" for="Date">Date</label>
-                    <div class="col-sm-8 col-md-6">
-                        <input type="date" />
+                <div class="form-horizontal form-widgets col-sm-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="name"> Machine Make/Model:</label>
+                        <div class="col-sm-8 col-md-6">
+                            <input id="Model" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="name">Unit #: </label>
+                        <div class="col-sm-8 col-md-6">
+                            <input id="unitno" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="name">Contact #: </label>
+                        <div class="col-sm-8 col-md-6">
+                            <input id="ContactNo" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="name">Address: </label>
+                        <div class="col-sm-8 col-md-6">
+                            <input id="Address" />
+                        </div>
                     </div>
                 </div>
-
-                <div class="form-group">
-                    <label class="control-label col-sm-4" for="FluidLevels">Fluid Levels</label>
-                    <div class="col-sm-8 col-md-6">
-                        <select id="gender">
-                            <option selected>Motor Oil</option>
-                            <option>Radiator</option>
-                            <option>Power Steering</option>
-                            <option>Windshield Washer</option>
-                        </select>
+                <div class="clearfix"></div>
+            </section>
+            <section class="well">
+                <div class="form-horizontal form-widgets col-sm-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="Company">Firstname</label>
+                        <div class="col-sm-8 col-md-6">
+                            <input id="Firstname" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="Company">Lastname</label>
+                        <div class="col-sm-8 col-md-6">
+                            <input id="Lastname" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="language">Status</label>
+                        <div class="col-sm-8 col-md-6">
+                            <select id="language">
+                                <option selected>Single</option>
+                                <option>Married</option>
+                                <option>Separated</option>
+                                <option>Window</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
-
-                <div class="form-group">
-                    <label class="control-label col-sm-4" for="language">Driver's Compartment</label>
-                    <div class="col-sm-8 col-md-6">
-                        <select id="language">
-                            <option selected>Sun Visors</option>
-                            <option>Side Windows</option>
-                            <option>Pedal Pads</option>
-                            <option>Seats & Seatbelts</option>
-                            <option>Speedometer</option>
-                            <option>Compressor Buildups</option>
-                            <option>Air Leakage</option>
-                        </select>
+                <div class="form-horizontal form-widgets col-sm-6">
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="name">Movie:</label>
+                        <div class="col-sm-8 col-md-6">
+                            <input id="Model" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label col-sm-4" for="name">Language: </label>
+                        <div class="col-sm-8 col-md-6">
+                            <input id="Language" />
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="form-horizontal form-widgets col-sm-6">
-                <div class="form-group">
-                    <label class="control-label col-sm-4" for="name"> Machine Make/Model:</label>
-                    <div class="col-sm-8 col-md-6">
-                        <input id="Model" />
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-4" for="name">Unit #: </label>
-                    <div class="col-sm-8 col-md-6">
-                        <input id="unitno" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="buttons-wrap">
-                <button class="k-button k-state-default">Cancel</button>
-                <button class="k-button k-state-default">Submit</button>
-            </div>
-        </section>
-
-
-        <footer>Copyright &copy;
-       <a href="https://www.telerik.com/">Telerik Inc</a>. All rights reserved.</footer>
+                <div class="clearfix"></div>
+            </section>
+        </form>
+        <div class="buttons-wrap">
+            <button class="k-button k-state-default">Cancel</button>
+            <button class="k-button k-state-default">Submit</button>
+        </div>
     </div>
+    <footer>Copyright &copy; <a href="#">Telerik Inc</a>. All rights reserved.</footer>
     <script src="~/js/ajax.js"></script>
-    
+
 </body>
 </html>
